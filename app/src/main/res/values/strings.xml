@@ -6,4 +6,8 @@
     <string name="hint_citacao">Citação</string>
     <string name="cancelar">Cancelar</string>
     <string name="salvar">Salvar</string>
+    <string name="err_sem_autor">"Por favor, informe o nome do autor. "</string>
+    <string name="err_sem_frase">Por favor, informe a frase.</string>
+    <string name="erro_nome_autor">Por favor, informe o nome.</string>
+    <string name="erro_frase_nao_preenchida">Por favor, informe a frase.</string>
 </resources>
