@@ -4,6 +4,7 @@ import android.app.Instrumentation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import br.com.igti.frases.databinding.ActivityMainBinding
 import br.com.igti.frases.ui.incluirfrase.IncluirFraseActivity
@@ -16,7 +17,9 @@ class MainActivity : AppCompatActivity() {
     ){ activityResult ->
         if ( activityResult.resultCode == RESULT_OK){
             activityResult.data?. let {
-                if(it.hasExtra())
+                if(it.hasExtra(RETORNO)) {
+                    Log.i("IGTIinfo:","Retorno:${it.data}")
+                }
             }
         }
     }
@@ -36,8 +39,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun configurarFabListener() {
         binding.fabAddNovaFrase.setOnClickListener {
-            val intent = Intent( this, IncluirFraseActivity::class.java)
-            startActivity(intent)
+  //          startActivity(Intent( this, IncluirFraseActivity::class.java))
+            Intent ( this, IncluirFraseActivity::class.java).let{
+                retornoFrase.launch(it)
+            }
         }
     }
     companion object{
