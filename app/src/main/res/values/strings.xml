@@ -10,4 +10,5 @@
     <string name="err_sem_frase">Por favor, informe a frase.</string>
     <string name="erro_nome_autor">Por favor, informe o nome.</string>
     <string name="erro_frase_nao_preenchida">Por favor, informe a frase.</string>
+    <string name="lista_limpa_sucesso">Lista limpa com sucesso.</string>
 </resources>

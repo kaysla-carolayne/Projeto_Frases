@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projeto_Frases/app/src/main/res/layout/activity_incluir_frase.xml" value="0.2" />
-        <entry key="..\:/Projeto_Frases/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Projeto_Frases/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Projeto_Frases/app/src/main/res/layout/list_item_frases.xml" value="0.33" />
       </map>
     </option>
   </component>

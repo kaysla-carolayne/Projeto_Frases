@@ -61,6 +61,7 @@ class IncluirFraseActivity : AppCompatActivity() {
                         autor = autor,
                         frase = frase
                     ))
+                    setResult(RESULT_OK, this)
                 }
                 finish()
             }else
